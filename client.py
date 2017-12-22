@@ -1,9 +1,10 @@
 from algoliasearch import algoliasearch
-from instance.config import API_KEY, APP_ID, INDEX_NAME
+from instance.config import DevelopmentConfig
 
 
 def client_connect():
 
-    client = algoliasearch.Client(APP_ID, API_KEY)
-    index = client.init_index(INDEX_NAME)
+    client = algoliasearch.Client(DevelopmentConfig.APP_ID,
+                                  DevelopmentConfig.API_KEY)
+    index = client.init_index(DevelopmentConfig.INDEX_NAME)
     return index
