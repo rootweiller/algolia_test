@@ -5,11 +5,11 @@ Algolia test
 * Flask 
 * Algolia
 
-#Method Search
+# Method Search
 
 This software required API_KEY APP_ID NAME_APP of algolia web and XML URL from list
 
-#URL API SEARCH
+# URL API SEARCH
 
 http://localhost:5000/API/V1/q/<search>
 
